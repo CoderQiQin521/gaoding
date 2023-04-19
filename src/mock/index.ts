@@ -8,4 +8,10 @@ const data = Mock.mock({
     }]
 })
 
-Mock.mock('/api/list', 'get', data)
+Mock.mock('/api/list', 'get', () => {
+    return {
+        code: 200,
+        message: 'success',
+        data: data
+    }
+})

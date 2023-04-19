@@ -1,11 +1,10 @@
 <script setup lang="ts">
-import axios from "axios";
+import { list } from "./apis";
 import { RouterLink, RouterView } from "vue-router";
 
-axios
-  .get("/api/list")
+list()
   .then((response) => {
-    console.log("response", response);
+    console.log("mock res", response);
   })
   .catch((error) => {
     console.log(error);
