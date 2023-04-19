@@ -1,10 +1,8 @@
 <script setup lang="ts">
+import AppHeader from "@/components/AppHeader.vue";
 </script>
 
 <template>
-  <main class="bg-green-500">
-    <div class="bg-gray-100">
-      hello
-    </div>
-  </main>
+  <AppHeader></AppHeader>
+  <RouterView></RouterView>
 </template>
